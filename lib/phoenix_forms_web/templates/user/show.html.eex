@@ -1,0 +1,43 @@
+<h2>Show User</h2>
+
+<ul>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </li>
+
+  <li>
+    <strong>Address:</strong>
+    <%= @user.address %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong>Date of birth:</strong>
+    <%= @user.date_of_birth %>
+  </li>
+
+  <li>
+    <strong>Number of children:</strong>
+    <%= @user.number_of_children %>
+  </li>
+
+  <li>
+    <strong>Notifications enabled:</strong>
+    <%= @user.notifications_enabled %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: user_path(@conn, :edit, @user) %></span>
+<span><%= link "Back", to: user_path(@conn, :index) %></span>
